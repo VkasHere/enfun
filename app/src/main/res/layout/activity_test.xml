@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluee"
+    android:orientation="vertical"
+    tools:context=".Test">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bluee"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/bck"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+            <TextView
+                android:id="@+id/testtopic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/bangers"
+                android:textSize="32sp"
+                android:text="Correct form of verb"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topic"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 1"
+                />
+            <TextView
+                android:id="@+id/topic2"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 2"
+                />
+            <TextView
+                android:id="@+id/topic3"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+            <TextView
+                android:id="@+id/testtopic1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/bangers"
+                android:textSize="32sp"
+                android:text="Passive Voice"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Excer1"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 1"
+                />
+            <TextView
+                android:id="@+id/Excer2"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 2"
+                />
+            <TextView
+                android:id="@+id/Excer3"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+            <TextView
+                android:id="@+id/testtopic2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/bangers"
+                android:textSize="32sp"
+                android:text="Direct to Indirect"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dtiExcer1"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 1"
+                />
+            <TextView
+                android:id="@+id/dtiExcer2"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 2"
+                />
+            <TextView
+                android:id="@+id/dtiExcer3"
+                android:layout_margin="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:fontFamily="@font/bangers"
+                android:background="@drawable/blackout"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Excercise 3"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

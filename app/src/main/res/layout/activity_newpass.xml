@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".forgetpassword.newpass">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f5f6fc"
+        android:layout_height="70sp">
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/bck"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10sp"
+                android:layout_width="20sp"
+                android:layout_height="20sp"/>
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bluee"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            app:lottie_rawRes="@raw/setpass"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="12sp"
+        android:background="@drawable/round2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Set a new password"
+            android:textColor="#000"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="28sp"
+            android:layout_marginTop="15sp"
+            />
+        <TextView
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:text="Please Type a strong password"
+            android:textSize="18sp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20sp"
+                    android:orientation="vertical" >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password"
+                        app:hintTextColor="#000"
+                        android:id="@+id/ps"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pass"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm password"
+                        app:hintTextColor="#000"
+                        android:id="@+id/cps"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cpass"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/setpas"
+                    android:onClick="confirm"
+                    android:layout_width="140sp"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/gra"
+                    android:layout_gravity="center"
+                    android:text="Set Pass"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textColor="#fff"
+                    android:transitionName="anim_go" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

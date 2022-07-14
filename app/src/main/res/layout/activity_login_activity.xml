@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        tools:context=".Login_activity"
+        android:orientation="vertical"
+        android:background="@color/bluee"
+        android:padding="20sp"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="350sp"
+                        android:src="@drawable/log"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content" >
+                  <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="90sp"
+                        android:layout_height="90sp"
+                        android:src="@drawable/logos"
+                      android:visibility="gone"
+                        android:scaleType="centerCrop"
+                        android:transitionName="logo_image" />
+
+                    <TextView
+                        android:id="@+id/icontext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:fontFamily="@font/bungee"
+                        android:text="Hello there, welcome back"
+                        android:textColor="@color/gra"
+                        android:textSize="35sp"
+                        android:transitionName="logo_text" />
+
+                    <TextView
+                        android:layout_marginTop="5sp"
+                        android:layout_marginLeft="10sp"
+                        android:id="@+id/slogan_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sing in to continue"
+                        android:transitionName="join_text"
+                        android:textSize="18sp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/username"
+                        android:hint="Mobile Number"
+                        app:counterMaxLength="10"
+                        android:transitionName="anim_username"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/editnum"
+                            android:inputType="number"
+
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/password"
+                        android:hint="password "
+                        android:transitionName="anim_password"
+                        app:passwordToggleEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:id="@+id/editpass"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/forpass"
+                        android:layout_width="150sp"
+                        android:layout_height="30sp"
+                        android:gravity="center"
+                        android:text="Forget Password"
+                        android:background="#f5f6fc"
+                        android:textColor="#707070"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:layout_gravity="right"
+                        />
+
+                    <TextView
+                        android:id="@+id/Loginbtn"
+                        android:layout_width="140sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="@drawable/gra"
+                        android:layout_gravity="center"
+                        android:text="Login"
+                        android:onClick="loginuser"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="#fff"
+                        android:transitionName="anim_go" />
+
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/ripple"
+                        android:text="New user? SING UP HERE"
+                        android:gravity="center"
+                        android:transitionName="anim_new"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:elevation="0dp"
+                        android:id="@+id/singupbtn"
+                        android:layout_margin="5sp"
+                        android:textColor="#000"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

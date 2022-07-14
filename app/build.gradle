@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.example.summitclasses"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //firebase
+    implementation 'com.google.firebase:firebase-database:19.5.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //chip navigation
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.10'
+
+    //noinspection GradleCompatible
+    implementation "com.android.support:design:28.0.0"
+    //recyclerview
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    //pinview
+    implementation 'com.chaos.view:pinview:1.4.4'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    //recaptcha
+    implementation 'androidx.browser:browser:1.3.0'
+    //exo player
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.7'
+    //image slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    //circleimage
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //crop
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+    //picaso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //lottie
+    implementation 'com.airbnb.android:lottie:3.4.4'
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+}

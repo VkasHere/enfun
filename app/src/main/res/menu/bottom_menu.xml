@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/expr"
+        android:icon="@drawable/direction"
+        android:title="Explore"
+        app:cnb_iconColor="#117AEA"/>
+    <item
+        android:id="@+id/notice"
+        android:icon="@drawable/ic_notice"
+        android:title="Notice"
+        app:cnb_iconColor="#117AEA"/>
+    <item
+        android:id="@+id/Achievements"
+        android:icon="@drawable/ic_achieve"
+        android:title="Achievements"
+        app:cnb_iconColor="#117AEA" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/user"
+        android:title="Profile"
+        app:cnb_iconColor="#117AEA" />
+</menu>

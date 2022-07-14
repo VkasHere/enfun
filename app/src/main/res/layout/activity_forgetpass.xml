@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bluee"
+    android:layout_height="match_parent"
+    tools:context=".forgetpassword.forgetpass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f5f6fc"
+        android:layout_height="70sp">
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/bck"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10sp"
+                android:layout_width="20sp"
+                android:layout_height="20sp"/>
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bluee"
+        android:layout_marginTop="25sp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            app:lottie_rawRes="@raw/forget"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="12sp"
+        android:background="@drawable/round2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center"
+            android:text="Forget password !"
+            android:textColor="#000"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_margin="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:text="You will recieve an OTP on your Registered Mobile no."
+            android:textSize="18dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical" >
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter username"
+                        app:hintTextColor="#000"
+                        android:id="@+id/usr"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/username"
+                            android:inputType="text"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Mobile no."
+                        app:hintTextColor="#000"
+                        android:id="@+id/mn"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mobileno"
+                            android:inputType="number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/verifypas"
+                    android:layout_width="140dp"
+                    android:layout_height="50sp"
+                    android:onClick="loginuser"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/gra"
+                    android:layout_gravity="center"
+                    android:text="Verify"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textColor="#fff"
+                    android:transitionName="anim_go" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

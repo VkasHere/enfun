@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.summitclasses">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".checkinternet.mynet"
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/logos"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logos"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".About"/>
+        <activity android:name=".Test" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.testhelper.result11" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.test11" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.Exercise2" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.Exercise3" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.test11" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.Exercise2" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.Exercise3" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.test11" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.Exercise2" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.Exercise3" />
+        <activity android:name=".Fragments.explorefrg.rv2.paragraph.para" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.Introduction" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1fst" />
+        <activity android:name=".Fragments.explorefrg.rv1.Noun" />
+        <activity android:name=".Fragments.explorefrg.rv1.Pronoun" />
+        <activity android:name=".Fragments.explorefrg.rv1.subjectverb" />
+        <activity android:name=".Fragments.explorefrg.rv1.narration" />
+        <activity android:name=".Fragments.explorefrg.rv2.paragraph.paragraph" />
+        <activity android:name=".Fragments.explorefrg.rv2.paragraph.debate" />
+        <activity android:name=".Fragments.explorefrg.rv2.paragraph.speech" />
+        <activity android:name=".Fragments.explorefrg.rv2.paragraph.story" />
+        <activity android:name=".Fragments.explorefrg.rv3.Advertisement" />
+        <activity android:name=".Fragments.explorefrg.rv3.Invitation" />
+        <activity android:name=".Fragments.explorefrg.rv3.formalInvitation" />
+        <activity android:name=".Fragments.explorefrg.rv3.Notice" />
+        <activity android:name=".Fragments.explorefrg.rv3.Report" />
+        <activity android:name=".Fragments.explorefrg.rv1.passive" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.intro" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.DtoIRules" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.optative" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.Imperative" />
+        <activity android:name=".Fragments.explorefrg.rv1.narrationfull.Exclamatory" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.presentten" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.pastten" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.futureten" />
+        <activity android:name=".Fragments.explorefrg.rv1.rv1full.extras" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.presentten" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.pastten" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.futureten" />
+        <activity android:name=".Fragments.explorefrg.rv1.passivefull.extras" />
+        <activity android:name=".Fragments.profileedit.editprofile" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".checkinternet.Nointernet" />
+        <activity android:name=".forgetpassword.newpass" />
+        <activity android:name=".forgetpassword.verifymobilepass" />
+        <activity android:name=".forgetpassword.forgetpass" />
+        <activity android:name=".mobileverification.singupverification" />
+        <activity android:name=".Singup_activity" />
+        <activity android:name=".dashbord" />
+        <activity android:name=".Login_activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

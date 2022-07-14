@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+
+        <item android:id="@+id/home_icon"
+            android:title="Chat "
+            android:icon="@drawable/cchat"/>
+        <item android:id="@+id/Classes"
+            android:title="Test"
+            android:icon="@drawable/ic_baseline_cloud_download_24"/>
+        <item android:id="@+id/Acedemic_result"
+            android:title="Achievements"
+            android:icon="@drawable/ach"/>
+        <item android:id="@+id/About"
+            android:title="About"
+            android:icon="@drawable/abt"/>
+
+    </group>
+    <item android:title="Profile"
+        >
+
+
+        <menu >
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/login"
+                      android:title="User Profile"
+                    android:icon="@drawable/usrprf"/>
+
+                <item android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/singout"/>
+
+            </group>
+
+
+
+        </menu>
+
+    </item>
+
+</menu>

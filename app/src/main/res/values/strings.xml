@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Summit classes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pattern">[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+</string>
+    <string name="about">Summit Classes is a Platform to Study English in a better way. It is situated in Kota and operated from here.</string>
+    <string name="about1">We Started Summit classes in the year 2016 and within one year, We got best Results. Our Students got highest marks in our locality. Day by day, We gained Experience and advanced ourselves.</string>
+    <string name="about2">Our Goal is to provide a platform for everyone to improve his/her basic knowledge of grammar and Anyone can easily gain skills in English grammar through Summit classes. </string>
+    <string name="about3">Summit Classes has only one teacher in its team but also has many students as a part of summit classes. Mr. Sumit Mishra is the Director of Summit classes.      </string>
+    <string name="about4">Introverts Coding &amp; Development (ICD) is a startup company which developed Summit classes app and manages too. </string>
+</resources>

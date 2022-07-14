@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160sp"
+    android:layout_height="250sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10sp"
+    app:cardElevation="8sp"
+    android:layout_margin="10sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="140sp"
+            android:src="@color/bfg"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="17sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mark_re"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="marks"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="/100"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/batch_re"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Year"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.summitclasses.dashbord">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="300sp"
+        android:theme="@style/navigationtheme"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:layout_gravity="start"
+        app:itemBackground="@drawable/itempadding"
+        android:padding="12sp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/menu_header"
+        >
+        <ImageView
+            android:id="@+id/cls_nav"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_margin="10sp"
+            android:src="@drawable/cross"
+            android:layout_gravity="end"
+
+            />
+
+    </com.google.android.material.navigation.NavigationView>
+<RelativeLayout
+    android:id="@+id/contentt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/menufram"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ripple"
+            android:layout_marginLeft="10sp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/sidebar"
+                android:layout_width="40sp"
+                android:layout_gravity="center"
+                android:layout_height="40sp"
+                android:src="@drawable/menuiconn"
+
+                />
+        </FrameLayout>
+
+     <FrameLayout
+         android:layout_toEndOf="@+id/menufram"
+         android:id="@+id/textfram"
+         android:layout_toStartOf="@+id/powerfram"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fontFamily="@font/bangers"
+             android:gravity="center"
+             android:text="Summit Classes"
+             android:textColor="#000"
+             android:textSize="27sp" />
+     </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/powerfram"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ripple"
+            android:layout_marginRight="20sp"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/poweoff"
+            android:layout_width="30sp"
+            android:layout_gravity="center"
+            android:layout_height="30sp"
+            android:src="@drawable/power"
+
+            />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_addBottomInset="false"
+        android:layout_alignParentBottom="true"
+        app:cnb_addLeftInset="false"
+        app:cnb_addRightInset="false"
+        android:background="#f5f6fc"
+        app:cnb_addTopInset="false"
+        app:cnb_unselectedColor="#696969"
+        app:cnb_badgeColor="#F44336"
+        app:cnb_radius="8sp"
+        app:cnb_iconSize="24sp"
+        app:cnb_textAppearance="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

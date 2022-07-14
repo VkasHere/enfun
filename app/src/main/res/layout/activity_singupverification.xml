@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mobileverification.singupverification">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_height="250sp"
+                app:lottie_rawRes="@raw/verify"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round2"
+        android:layout_margin="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_height="90sp"
+            android:src="@drawable/smartphone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Verify Mobile no."
+            android:textColor="#000"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="An OTP is sent to your Mobile no."
+            android:textColor="#000"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:layout_marginTop="10sp"
+            />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:text=""
+            android:itemBackground="#E2E2E2"
+            app:cursorColor="#000"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="50sp"
+            app:itemRadius="5sp"
+            app:itemWidth="50sp"
+            app:lineColor="#fff"
+            app:lineWidth="1sp" />
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="140sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/gra"
+            android:layout_gravity="center"
+            android:text="Verify"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textColor="#fff"
+            android:transitionName="anim_go" />
+    </LinearLayout>
+</ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
